@@ -1,0 +1,177 @@
+.img{
+    display: none;
+}
+.content{   
+    display: grid;
+    grid-gap: 8px;
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+                        'handbags'
+                        'watch '
+                        'shoes';
+ }
+.handbags{
+     background-image: url(https://images.unsplash.com/photo-1547949003-9792a18a2601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+     background-position: center;
+     background-size: cover;
+     color: white;
+}
+.button{
+    text-align: center;
+}
+a{
+     color: white;
+}
+.watch{
+     background-image: url(https://images.unsplash.com/photo-1482954363933-4bed6bbea570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+     background-position: center;
+     background-size: cover;
+   
+     color: white;
+}
+.shoes{
+     background-image: url(https://images.unsplash.com/photo-1528725527304-363a4db522fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+     background-position: center;
+     background-size: cover;
+  
+     color: white;
+}
+.main{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+                        'card1'
+                        'card2'
+                        'card3'
+                        'card4'
+                        'card5'
+                        'card6 '
+                        'card7'
+                        'card8';
+}
+
+.price{
+    color: red;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.one{
+    color: grey;
+    margin-left: 5px;
+    text-decoration: line-through;
+}
+.contact-gridbox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+                        'number';
+    font-size: 15px;        
+      
+ 
+}
+#call{
+    font-size: 15px;
+    color: grey;
+    line-height: 0px;
+}
+.free{
+    display: none;
+}
+.number{
+    color: black;
+}
+.box{
+    display: grid;
+    grid-row: 8px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+                        'information'
+                        'customer'
+                        'extras'
+                        'account';    
+}
+.box>ul>li{
+    list-style-type: none;
+    border-bottom: 2px solid rgb(221, 219, 219);
+    margin: 5px auto;
+    color: rgb(209, 202, 202);
+ }
+.last{
+    border: none;
+}
+.first{
+    color: black;
+}
+img{
+    width: 200px;
+}
+
+
+
+@media (min-width: 576px){
+    .content{   
+        display: grid;
+        grid-gap: 10px;
+        margin-top: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+                            'img       img     img  '
+                            'handbags  watch   shoes';}
+    .img{
+        display: inline;
+    }
+    .handbags{
+        height: 250px;
+    }
+    
+    .main{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr ;
+        margin-top: 30px;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+                            'card1 card2 card3 card4'
+                            'card5 card6 card7 card8';
+    }
+    .contact-gridbox{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+                            'free number .';
+        font-size: 24px;        
+          
+     
+    }
+    .box{
+        display: grid;
+        grid-row: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+                            'information customer extras account';
+        margin-top: 10px;
+        
+    }
+    #call{
+        width: 450px;
+        font-size: 18px;
+        color: grey;
+        line-height: 0px;
+    }
+    .free{
+        display: inline;
+    }
+
+
+}
+
